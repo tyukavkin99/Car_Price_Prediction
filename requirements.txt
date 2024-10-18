@@ -6,3 +6,4 @@ plotly
 pickle
 json
 sklearn
+-e .
