@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import plotly.express as px
-
+import joblib
 import pickle
 import json
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
