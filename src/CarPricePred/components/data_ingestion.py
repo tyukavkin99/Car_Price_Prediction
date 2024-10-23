@@ -1,5 +1,8 @@
 import pandas as pd
 import numpy as np
+from src.CarPricePred.exception import CustomException
+from src.CarPricePred.logger import logging
+import sys
 
 class DataIngestion():
     def __init__(self, file_path=str()) -> pd.DataFrame:
@@ -16,6 +19,7 @@ class DataIngestion():
         try:
             self.data_frame = pd.read_csv(self.file_path)
         except Exception as e:
-            print(e)
+            logging.info(e)
+            raise CustomException(e,sys)
         if self.data_frame != None:
             return self.data_frame
