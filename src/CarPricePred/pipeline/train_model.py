@@ -5,6 +5,8 @@ from sklearn import pipeline
 
 
 def main():
+    df = DataIngestion(file_path="../car_price_prediction_.csv").load_csv()
+    df = DataTransformer(data=df).remove_id()
     pass
 
 if __name__ == "main":
