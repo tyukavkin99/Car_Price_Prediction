@@ -8,6 +8,12 @@ class Model_Trainer():
         self.data = data
         self.model = None
     
+    def fit_data(self):
+        pass
+
+    def predict_data(self):
+        pass
+
     def train_model(self):
         pass
 
